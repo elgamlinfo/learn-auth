@@ -19,7 +19,7 @@ passport.use(
         {
             clientID: process.env.CLIENT_ID_FB,
             clientSecret: process.env.CLIENT_SECRET_FB,
-            callbackURL: "http://localhost:3000/auth/fb/secret",
+            callbackURL: "https://learn-auth.herokuapp.com/auth/fb/secret",
             profileFields: [
                 "id",
                 "displayName",
@@ -42,7 +42,7 @@ passport.use(
         {
             clientID: process.env.CLIENT_ID_GOOGLE,
             clientSecret: process.env.CLIENT_SECRET_GOOGLE,
-            callbackURL: "http://localhost:3000/auth/google/callback",
+            callbackURL: "https://learn-auth.herokuapp.com/auth/google/callback",
         },
         function (accessToken, refreshToken, profile, cb) {
             user = { name: profile.displayName, img: profile.photos[0].value.replace("s96", "s250") };
