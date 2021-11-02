@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .facebook-auth {
+            background-color: #1771ed;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;  
+            text-decoration: none;   
+            margin: 10px;
+
+        }
+        .google-auth {
+            background-color: #fff;
+            color: #1771ed;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 5px 20px;
+            font-size: 18px;
+            cursor: pointer;  
+            text-decoration: none;
+            box-shadow: 0px 0px 5px #ccc;
+            margin: 10px;
+        }
+        .cont {
+            padding: 40px 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h2>Login With Facebook OR Google Acount</h2>
+        <a class="facebook-auth" href="/auth/facebook">Facebook</a>
+        <a class="google-auth" href="/auth/google">Google</a>
+    </div>
+</body>
+</html>
