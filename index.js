@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const port = process.env.Port || 3000;
+const port = process.env.PORT || 3000;
 const passport = require("passport");
 const FacebookStrategy = require("passport-facebook");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
